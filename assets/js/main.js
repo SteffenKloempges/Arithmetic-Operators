@@ -4,14 +4,14 @@ let x = 20
 let y = 30
 let z = 10
 
-console.log(Number(x) + Number(y))
-console.log(Number(y) - Number(x))
-console.log(Number(x) - Number(y))
-console.log(Number(x) * Number(y))
-console.log(Number(x) / Number(y))
-console.log((Number(x) / Number(y)) / Number(z))
+console.log(x + y)
+console.log(y - x)
+console.log(x - y)
+console.log(x * y)
+console.log(x / y)
+console.log((Number(x) * Number(y)) / Number(z))
 
-let resultOne = (Number(x) / Number(y)) / Number(z)
+let resultOne = (Number(x) * Number(y)) / Number(z)
 
 //Aufgabenstellung 2
 
@@ -23,10 +23,17 @@ console.log(a % b)
 console.log((Number(a) + Number(b)) * Number(c))
 
 console.log("------")
-
-var resultTwo = (Number(a) + Number(b)) * Number(c)
+let resultTwo = (Number(a) + Number(b)) * Number(c)
 console.log(resultTwo)
-
 console.log('------')
+
+// console.log(++a)
+// console.log(--b)
+
+let v = ++a
+let m = --b
+let resultThree = m - v
+
+console.log(resultThree)
 
 console.log(Number(resultOne) % Number(resultTwo))
